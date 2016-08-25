@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "miscblocksitemsandmore:items/fake_pyrothium"
+    "layer0": "endpoint:items/fake_pyrothium"
   },
   "display": {
     "thirdperson": {

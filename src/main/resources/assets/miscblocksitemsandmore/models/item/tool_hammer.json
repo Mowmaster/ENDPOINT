@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "miscblocksitemsandmore:items/tool_hammer"
+    "layer0": "endpoint:items/tool_hammer"
   },
   "display": {
     "thirdperson": {

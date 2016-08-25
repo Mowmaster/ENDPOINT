@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "miscblocksitemsandmore:items/enderium_blend_dust"
+    "layer0": "endpoint:items/enderium_blend_dust"
   },
   "display": {
     "thirdperson": {

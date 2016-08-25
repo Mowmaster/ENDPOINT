@@ -1,9 +1,9 @@
 [
 {
-  "modid": "miscblocksitemsandmore",
-  "name": "Misc Blocks Items and More",
+  "modid": "endpoint",
+  "name": "End Point",
   "description": "Just misc tweeks I feel should be in the game or are handy to have",
-  "version": "0.1",
+  "version": "0.1.5",
   "mcversion": "1.10.2-12.18.1.2018",
   "url": "",
   "updateUrl": "",
