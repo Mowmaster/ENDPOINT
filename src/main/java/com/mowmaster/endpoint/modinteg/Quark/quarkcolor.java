@@ -13,9 +13,7 @@ import net.minecraftforge.oredict.ShapelessOreRecipe;
 
 import static com.mowmaster.endpoint.recipies.removeRecipies.removeCrafting;
 
-/**
- * Created by KingMowmaster on 7/26/2016.
- */
+
 public class quarkcolor
 {
     public static void checkQuark()
@@ -23,8 +21,10 @@ public class quarkcolor
         if (Loader.isModLoaded("Quark"))
         {
 
-            Item QBeds = Item.REGISTRY.getObject(new ResourceLocation("quarkcolor:colored_bed_item"));
-            Item QFrame = Item.REGISTRY.getObject(new ResourceLocation("quarkcolor:colored_item_frame"));
+            Item QBeds = Item.REGISTRY.getObject(new ResourceLocation("quark:colored_bed_item"));
+            Item QChest = Item.REGISTRY.getObject(new ResourceLocation("quark:custom_chest"));
+            Item QTCrest = Item.REGISTRY.getObject(new ResourceLocation("quark:custom_chest_trap"));
+            Item QFrame = Item.REGISTRY.getObject(new ResourceLocation("quark:colored_item_frame"));
 
 
 
@@ -36,6 +36,11 @@ public class quarkcolor
             //Add in the crafting of any wool into a bed
             GameRegistry.addRecipe(new ShapedOreRecipe(Items.BED,"XXX","YYY", 'X', new ItemStack(Blocks.WOOL,1, OreDictionary.WILDCARD_VALUE), 'Y', "plankWood"));
 
+            //Quark Chests into their Vanilla counterparts
+            for (int chest = 0; chest <=4; chest++) {
+                GameRegistry.addShapelessRecipe(new ItemStack(Blocks.CHEST, 1), new ItemStack(QChest, 1, chest));
+                GameRegistry.addShapelessRecipe(new ItemStack(Blocks.TRAPPED_CHEST, 1), new ItemStack(QTCrest, 1, chest));
+            }
 
 
             //Added Recipes

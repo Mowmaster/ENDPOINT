@@ -24,7 +24,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import java.io.File;
 
-
+/*
 @Mod(modid = reference.MODID, name = reference.MODNAME, version = reference.VERSION)
 public class endpoint
 {
@@ -89,3 +89,4 @@ public class endpoint
 
 
 }
+*/
